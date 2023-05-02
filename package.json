@@ -1,0 +1,30 @@
+{
+  "name": "placeholder",
+  "description": "A custom svg placeholder api build for use on vercel.",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "npx ts-node src",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSeanU/placeholder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSeanU/placeholder/issues"
+  },
+  "homepage": "https://github.com/TheSeanU/placeholder#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

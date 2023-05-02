@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "devCommand": "npm run dev",
+    "buildCommand": "npm run build",
+    "installCommand": "npm i",
+    "outputDirectory": "dist",
+    "builds": [
+        {
+            "src": "dist/index.js",
+            "use": "@vercel/node",
+            "config": {
+                "serverFiles": "dist/**"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "dist/index.js"
+        }
+    ]
+}
