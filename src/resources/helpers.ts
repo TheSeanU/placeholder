@@ -11,7 +11,7 @@ export const validateRequest = (req: Query): Resp => {
     if (!height || height === 0 || height > 1800) height = 250;
 
     const title = !text || text.length >= 30 ? `${width}x${height}` : text
-    const hex = color ? `#${color}` : '#cccccc'
+    const hex = color ? `#${color}` : '#E7E5E4'
 
     return { width, height, title, hex }
 }
